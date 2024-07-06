@@ -1,0 +1,253 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+header .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+header h1 {
+    margin: 10px 0 5px;
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+nav {
+    background-color: #444;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #444;
+}
+
+.about, .skills, .projects, .contact {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills li {
+    background-color: #ddd;
+    margin: 10px 15px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.projects .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.projects .project {
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.projects .project img {
+    width: 100%;
+    height: auto;
+}
+
+.projects .project h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #444;
+}
+
+.projects .project p {
+    padding: 0 15px 15px;
+    color: #666;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact form {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    margin: 20px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact form input,
+.contact form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: #555;
+}
+
+.contact-info {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    color: #666;
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#scrollToTopBtn:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    header .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .skills li {
+        margin: 5px 10px;
+        padding: 10px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact form {
+        margin-right: 0;
+        margin-bottom: 20px; /* Add margin to the bottom on small screens */
+    }
+}
